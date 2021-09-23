@@ -1,0 +1,40 @@
+.header {
+  height: 70px;
+
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 10;
+
+  background-color: transparent;
+  transition: .5s ease;
+
+  &.black {
+    background-color: #000;
+  }
+
+  &__logo {
+    height: 25px;
+
+    &__image {
+      height: 100%;
+    }
+  }
+
+  &__user {
+    height: 35px;
+
+    &__image {
+      height: 100%;
+      border: 3px;
+    }
+  }
+}

@@ -20,6 +20,12 @@ export default ({title, items}) => {
   const handleRightArrow = () => {
     let x = scrollX - Math.round(window.innerWidth / 2)
     let listWidth = items.results.length * 150
+
+    if (scrollX == (window.innerWidth - listWidth - 60)) {
+      setScrollX(0)
+      return
+    }
+
     if ((window.innerWidth - listWidth) > x) {
       x = window.innerWidth - listWidth - 60
     }
